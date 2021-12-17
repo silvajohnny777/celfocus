@@ -15,7 +15,7 @@ const NumberInfo: React.FC = () => {
 
     useEffect(() => {
       // Update the document title using the browser API
-      document.title = `Local public office > ${params.numberId}`;
+      document.title = `Local public office > ${params.numberId?.replace(/^(.{3})(.*)$/, "$1 $2")}`;
     });
 
     useEffect(() => {
@@ -28,7 +28,7 @@ const NumberInfo: React.FC = () => {
 
         <div>
 
-            <div><button onClick={() => navigate(-1)}>Go back</button></div>
+            <Link to={`/company/${numberInfo[0]?.company_id}`}><button>Go back</button></Link>
             
             <p>{params.numberId?.replace(/^(.{3})(.*)$/, "$1 $2")}</p>
 

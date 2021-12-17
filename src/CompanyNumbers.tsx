@@ -28,7 +28,7 @@ const CompanyNumbers: React.FC = () => {
 
         <div>
 
-            <button onClick={() => navigate(-1)}>Go back</button>
+            <Link to={`/`}><button>Go back</button></Link>
 
             <h1>Local public office</h1>
 
