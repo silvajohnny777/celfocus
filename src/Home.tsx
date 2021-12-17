@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
     useEffect(() => {
       // Update the document title using the browser API
-      document.title = `Companyes`;
+      document.title = `Companies`;
     });
 
     return (
