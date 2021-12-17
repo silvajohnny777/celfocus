@@ -30,7 +30,7 @@ const CompanyNumbers: React.FC = () => {
 
             <button onClick={() => navigate(-1)}>Go back</button>
 
-            <h1>Local public office {params.companyId}</h1>
+            <h1>Local public office</h1>
 
                 {
 
